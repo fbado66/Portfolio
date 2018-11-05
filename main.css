@@ -1,0 +1,175 @@
+body {
+  background: #323232;
+  margin: 0;
+  color:white;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.main::after {
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://image.ibb.co/gzOBup/showcase.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  /* filter: blur(10px); */
+  transition: all 1500ms;
+}
+
+.main:hover::after {
+  filter: blur(2px);
+}
+
+.main:hover .content {
+  filter: blur(3px);
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  margin-top: 105px;
+  margin-left: -145px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  transition: all 1000ms;
+  margin-top: -20px;
+  margin-left: 73px;
+}
+
+.about{
+  padding: 0 20%l; 
+}
+
+/* img{
+  width: 200px;
+  height: 100%;
+}  */
+
+.content .logo {
+  height: 180px;
+  width: 180px;
+}
+
+.content .title {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.content .text {
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.grid-4 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+a {
+  text-decoration: none; 
+}
+
+a:link {
+  background-color: transparent;  
+}
+a:visited {
+  color: white;
+  background-color: transparent; 
+}
+a:hover {
+  opacity: 0.3;
+  background-color: transparent; 
+}
+a:active {
+  font-style: italic;
+  background-color: transparent;
+}
+
+.grid-3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+footer {
+  padding: 2.2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 560px) {
+  .main::after {
+    height: 50vh;
+  }
+
+  .content .logo .about {
+    height: 140px;
+    width: 140px;
+  }
+
+  .signature{
+  display: none; 
+  }
+  
+
+  .content .text, .title {
+    display: none;
+  }
+  .grid-4,
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .nav_links div {
+    border-bottom: #333 dashed 1px;
+  }
+}
+
+/* Landscape */
+@media (max-height: 500px) {
+  .content .title,
+  .content .text {
+    display: none;
+  }
+
+  .content {
+    top: 0;
+  }
+}
