@@ -1,15 +1,53 @@
 body {
-  background: #323232;
+  background: white;
   margin: 0;
   color:white;
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+   font-family: acta-display, Georgia, "Times New Roman", serif;
+
 }
+
+.nav-wrapper, .page-footer{
+  background-image: radial-gradient(gray, black );
+}
+.nav_links{
+  background: #181818;
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+}
+button {
+width:60px;
+background-color: #181818;
+color: white;
+
+}
+button:hover .portfolio {
+  display:none
+}
+/* button:hover .portfolio {
+  content:"Portfolio"
+}
+button:hover:before {
+  content:"Projects"
+} */
+
+.card-content{
+  color: black; 
+}
+
+
+/* .card{ 
+  border-radius: 30px!important;
+} */
 
 .main::after {
   content: '';
   height: 100vh;
   width: 100%;
-  background-image: url(https://image.ibb.co/gzOBup/showcase.jpg);
+ background-image: url(shape.png); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -18,31 +56,27 @@ body {
   transition: all 1500ms;
 }
 
-.main:hover::after {
+/* .main:hover::after {
   filter: blur(2px);
 }
 
 .main:hover .content {
   filter: blur(3px);
-}
+} */
 
 .content {
   position: absolute;
   z-index: 1;
   top: 10%;
-  left: 50%;
   margin-top: 105px;
-  margin-left: -145px;
-  width: 300px;
   height: 350px;
   text-align: center;
   transition: all 1000ms;
   margin-top: -20px;
-  margin-left: 73px;
 }
 
 .about{
-  padding: 0 20%l; 
+  padding: 0 20%; 
 }
 
 /* img{
@@ -55,14 +89,20 @@ body {
   width: 180px;
 }
 
-.content .title {
-  font-size: 2.2rem;
-  margin-top: 1rem;
+ .title {
+  font-size: 56px;
+  line-height: 86px;
+  text-align: left;
+  letter-spacing: 1px;
+  padding: 0 15px; 
+  color: black; 
 }
 
-.content .text {
-  line-height: 1.7;
-  margin-top: 1rem;
+.text {
+  font-size: 20px;
+  text-align: left;
+  padding: 15px; 
+  color: black;
 }
 
 .container {
@@ -147,10 +187,14 @@ footer p {
   display: none; 
   }
   
+.title{
+  font-size: 26px;
+  line-height: 46px;
+}
+.text{
+  font-size: 10px;
+}
 
-  .content .text, .title {
-    display: none;
-  }
   .grid-4,
   .grid-3,
   .grid-2 {
