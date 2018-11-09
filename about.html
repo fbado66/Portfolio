@@ -6,46 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  </head>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class=" nav-extended">
+            <div class="nav-wrapper">
+                <a href="portfolio.html"class="brand-logo button-collapse" data-activates="mobile-demo" ><em>F_Bado</em></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="project.html">Projects</a></li>
+                  <li><a href="bado_franklin_resume.pdf" target="_blank" download>Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+      
+        <ul class="sidenav" id="mobile-demo">
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="project.html">Projects</a></li>
             <li><a href="bado_franklin_resume.pdf" target="_blank" download>Resume</a></li>
-          </ul>
+            <li><a href="about.html"><i class='fas fa-id-badge' style='font-size:30px'></i></a></li>
+            <li><a  href="https://github.com/fbado66" target="_blank" ><i class="fa fa-github" style="font-size:30px"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/franklin-bado/" target="_blank" ><i class="fa fa-linkedin-square" style="font-size:30px"></i></a></li>
+            <li><a  href="mailto:Fbado66@gmail.com" target="_blank" ><i class="fa fa-envelope-o" style="font-size:30px"></i></a></li>
+        </ul>
+    </div> 
+ 
+  <section class="about">
+      <br><br><br>
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img style="height:320px;" src="images/image.png">
+          </div> <br>
+            <div class="bio"> Hello my name is Franklin Bado, alumni of New York Code + Design Academy.
+                I am a full stack web developer based in New York City.
+                I believe in structure, an idea or a concept is only powerful
+                as the message that delivers to the users. I seek to inspire,
+                learn from others, and build the best environment to work on.
+                I am a critical thinker and problem solver that takes an all-inclusive
+                approach to every project. 
+            </div>
         </div>
-    </nav>
-  </head>
-  <body>
-   
+      </div> 
+  </section>
+</body>
 
-
-    <section class="about">
-     <h3> About me</h3>
-     <img src="image.jpg" alt="">
-     <p> Hello my name is Franklin Bado, alumni of New York Code + Design Academy.
-        I am a full stack web developer based in New York City.
-        I believe in structure, an idea or a concept is only powerful
-        as the message that delivers to the users. I seek to inspire,
-        learn from others, and build the best environment to work on.
-        I am a critical thinker and problem solver that takes an all-inclusive
-        approach to every project. 
-     </p>
-
-     </section>
-    </body>
-     <footer class="page-footer">   
-        <div class="footer">
-          <div class="container">
-            <a href="about.html">About </a>
-            <a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/franklin-bado/" target="_blank" >Linked In </a>
-          </div>
-        </div>
-    </footer>
-  </html>
+  <footer class="page-footer">   
+    <div class="footer">
+      <div class="container">
+        <a href="about.html"><i class='fas fa-id-badge' style='font-size:30px'></i></a>
+        <a class="grey-text text-lighten-4 right" style="margin-left: 30px;" href="mailto:Fbado66@gmail.com"><i class="fa fa-envelope-o" style="font-size:30px"></i></a>
+        <a class="grey-text text-lighten-4 right" style="margin-left: 15px;" href="https://www.linkedin.com/in/franklin-bado/" target="_blank" ><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
+        <a class="grey-text text-lighten-4 right"  href="https://github.com/fbado66" target="_blank" ><i class="fa fa-github" style="font-size:30px"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- Compiled and minified JavaScript -->
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>   
+ <script src="main.js"></script>
+ 
+ </html>

@@ -3,66 +3,44 @@ body {
   margin: 0;
   color:white;
    font-family: acta-display, Georgia, "Times New Roman", serif;
+}
 
+.sidenav-overlay{
+  position: relative!important;
 }
 
 .nav-wrapper, .page-footer{
   background-image: radial-gradient(gray, black );
 }
-.nav_links{
-  background: #181818;
-  width: 100px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 3;
-  min-height: 500px;
-}
-button {
-width:60px;
-background-color: #181818;
-color: white;
 
+.navbar-fixed{
+  z-index: 1; 
 }
-button:hover .portfolio {
-  display:none
+   
+.brand-logo{
+  text-shadow: 1px 2px yellow; 
+  font-weight: 3px;
+  font-size: 20px;
+  padding-left: 10px;
+  transform: 20deg;
 }
-/* button:hover .portfolio {
-  content:"Portfolio"
-}
-button:hover:before {
-  content:"Projects"
-} */
 
 .card-content{
   color: black; 
+  text-align: justify;
 }
-
-
-/* .card{ 
-  border-radius: 30px!important;
-} */
 
 .main::after {
   content: '';
-  height: 100vh;
+  height: 800px;
   width: 100%;
- background-image: url(shape.png); 
+ background-image: url(images/shape.png); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  /* filter: blur(10px); */
   transition: all 1500ms;
 }
-
-/* .main:hover::after {
-  filter: blur(2px);
-}
-
-.main:hover .content {
-  filter: blur(3px);
-} */
 
 .content {
   position: absolute;
@@ -78,11 +56,13 @@ button:hover:before {
 .about{
   padding: 0 20%; 
 }
-
-/* img{
-  width: 200px;
-  height: 100%;
-}  */
+.bio{
+  font-size: 24px;
+  color: black;
+  line-height: 44px;
+  letter-spacing:1px; 
+  padding: 12px;
+}
 
 .content .logo {
   height: 180px;
@@ -111,12 +91,6 @@ button:hover:before {
   overflow: hidden;
 }
 
-.grid-4 {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-}
-
 a {
   text-decoration: none; 
 }
@@ -137,72 +111,28 @@ a:active {
   background-color: transparent;
 }
 
-.grid-3 {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-2 {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.center {
-  text-align: center;
-  margin: auto;
-}
-
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
-}
-
-.bg-dark {
-  background: #333;
-  color: #f4f4f4;
-}
-
 footer {
   padding: 2.2rem;
-}
-
-footer p {
-  margin: 0;
 }
 
 /* Responsive */
 @media (max-width: 560px) {
   .main::after {
-    height: 50vh;
+    height: 80vh;
   }
 
   .content .logo .about {
-    height: 140px;
+    height: 200px;
     width: 140px;
   }
 
-  .signature{
-  display: none; 
-  }
-  
-.title{
-  font-size: 26px;
-  line-height: 46px;
-}
-.text{
-  font-size: 10px;
-}
-
-  .grid-4,
-  .grid-3,
-  .grid-2 {
-    grid-template-columns: 1fr;
+  .title{
+    font-size: 30px;
+    line-height: 46px;
   }
 
-  .nav_links div {
-    border-bottom: #333 dashed 1px;
+  .text{
+    font-size: 15px;
   }
 }
 
